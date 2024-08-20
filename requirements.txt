@@ -18,7 +18,7 @@ Flask-Migrate==4.0.7
 Flask-RESTful==0.3.9
 Flask-SQLAlchemy==3.1.1
 flask-swagger-ui==4.11.1
-
+gunicorn==23.0.0
 Jinja2==3.1.4
 Pillow==9.0.1
 pipenv==2023.12.1
