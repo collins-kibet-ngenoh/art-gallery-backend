@@ -1,7 +1,6 @@
 from datetime import datetime
-from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
-from app import db
+from . import db  # Import the `db` instance from `__init__.py`
 
 bcrypt = Bcrypt()
 
@@ -88,5 +87,3 @@ class Comment(db.Model):
     # Relationships
     artwork = db.relationship('Artwork', back_populates='comments')
     user = db.relationship('User', back_populates='comments')
-
-# Model for following artists
